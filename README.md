@@ -22,12 +22,22 @@ It integrates with the ServiceM8 API to fetch real booking data and supports mes
 ### Prerequisites
 - Node.js >= 20
 - npm or yarn
+- MongoDB (local or Atlas)
 
 ### Backend
 ```bash
 cd backend
 npm install
 npm run dev
+```
+## Environment Variables
+Create a `.env` file in the backend root:
+
+```env
+SERVICEM8=your_servicem8_api_key
+MONGODB_URI=mongodb://localhost:27017/customer-portal
+PORT=4000
+JWT_SECRET=yoursecretkey
 ```
 
 Express runs on http://localhost:4000 (can be changed)
