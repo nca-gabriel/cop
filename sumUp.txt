@@ -1,0 +1,39 @@
+Flow in plain terms:
+
+User Login
+
+Enter email + phone (no full password needed for POC)
+
+Backend (Express) validates and returns a session token
+
+View Bookings
+
+Frontend calls backend (/bookings)
+
+Backend fetches bookings from ServiceM8 API
+
+Frontend displays list
+
+View Booking Details
+
+Click a booking → /bookings/:id
+
+Backend fetches job details (and attachments if needed) from ServiceM8
+
+Frontend displays details + attachments
+
+Send Messages
+
+User can type messages tied to that booking
+
+Backend stores messages locally (JSON or in-memory)
+
+Frontend renders them
+
+That’s it.
+
+Everything else (attachments, messages) can be mocked or stored simply.
+
+Minimal UI; functionality over style.
+
+ServiceM8 API call = only for bookings and details.

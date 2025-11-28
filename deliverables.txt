@@ -1,0 +1,19 @@
+Task: Make a Proof of Concept (POC) for a minimal Customer Portal
+
+should show ff: Next.js, Express.js, with interated (1) ServiceM8 API endpoint
+
+Functional Requirements
+The delivered POC must enable a customer to:
+• Log in using email and phone number (or comparable identifiers). //Experss
+• View a list of their bookings. //(ServiceM8 API)
+• Access details of a specific booking. //(ServiceM8 API)
+• View associated file attachments. //(ServiceM8 API)
+• Send messages related to a booking, persisted in the backend. ?
+
+Technical Requirements
+• Frontend must be implemented using Next.js.
+• Backend must be implemented using Express.js.
+• At least one real ServiceM8 API call is required.
+• Additional integrations may be mocked where appropriate.
+• Data persistence method is at your discretion.
+• User interface design may be minimal; functionality is prioritized.
