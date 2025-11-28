@@ -24,11 +24,27 @@ It integrates with the ServiceM8 API to fetch real booking data and supports mes
 - npm or yarn
 - MongoDB (local or Atlas)
 
+### Backend - package.json
+```bash
+  "scripts": {
+    "start": "nodemon --watch src --ext ts --exec ts-node src/server.ts"
+  },
+```
+
 ### Backend
 ```bash
 cd backend
 npm install
-npm run dev
+npm start
+```
+
+### Start MongoDB locally (if using local MongoDB):
+```bash
+# Start MongoDB service
+mongod --dbpath ./data/db
+
+# OR using Docker
+docker run -d -p 27017:27017 --name customer-portal-mongo mongo:latest
 ```
 ## Environment Variables
 Create a `.env` file in the backend root:
